@@ -11,6 +11,9 @@ public class EmailService {
         this.dataSource=dataSource;
     }
     public void sendEmail(){
-        System.out.println(dataSource);
+        String[] emails=dataSource.getEmails();
+        for(String email:emails){
+            System.out.println(email);
+        }
     }
 }
